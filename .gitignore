@@ -1,0 +1,14 @@
+# Node
+node_modules/
+.env
+coverage/
+.vscode/
+*.log
+
+*.log.*
+
+test-output/
+.nyc_output/
+
+.DS_Store
+Thumbs.db

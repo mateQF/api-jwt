@@ -1,0 +1,41 @@
+{
+  "name": "jwt-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "test:unit": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js tests/unit",
+    "test:integration": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js tests/integration",
+    "test:coverage": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --coverage",
+    "coverage": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --coverage"
+  },
+  "keywords": [
+    "express",
+    "jwt",
+    "api",
+    "nodejs",
+    "authentication"
+  ],
+  "author": "Mateo Fortuna",
+  "license": "MIT",
+  "description": "API JWT segura con Express",
+  "dependencies": {
+    "bcrypt": "6.0.0",
+    "cors": "2.8.5",
+    "dotenv": "17.2.0",
+    "express": "5.1.0",
+    "express-rate-limit": "8.0.1",
+    "express-validator": "7.2.1",
+    "helmet": "8.1.0",
+    "jsonwebtoken": "9.0.2"
+  },
+  "devDependencies": {
+    "jest": "30.0.5",
+    "morgan": "1.10.1",
+    "nodemon": "3.1.10",
+    "supertest": "7.1.3"
+  }
+}
