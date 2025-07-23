@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 describe("Logger Utility", () => {
-  const logPath = path.resolve(__dirname, "../../../../audit.log");
+  const logPath = path.join(process.cwd(), "logs", "audit.log");
 
   const mockReq = {
     ip: "192.168.1.1",
