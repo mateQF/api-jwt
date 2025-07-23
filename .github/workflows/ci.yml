@@ -12,7 +12,6 @@ jobs:
     env:
       JWT_SECRET: ${{ secrets.JWT_SECRET }}
       JWT_EXPIRES: ${{ secrets.JWT_EXPIRES }}
-      CORS_ORIGIN: ${{ secrets.CORS_ORIGIN }}
 
     steps:
       - name: Checkout repo
